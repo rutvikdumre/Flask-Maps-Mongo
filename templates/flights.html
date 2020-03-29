@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+<title>Hotel</title>
+</head>
+<body bgcolor="#DDE1E1">
+<header style="background-image:url({{url_for('static', filename='city.jpg')}});background-size: cover; min-height: 100px; color:white; font-size: 40px">
+        <center>
+        <h1>Hotel</h1>
+        </center>
+</header>
+<div >
+       <form action="#" method="post">
+<label for="city"><b>City Name</b></label>
+<input type="text" placeholder="Enter City" name="city" required>
+<label for='sort'>Sort by</label>
+  <select name='sort'>
+    <option value='plh'>Price L-H</a></option>
+    <option value='rhl'>Rating H-L</a></option>
+    <option value='dlh'>Distance from airport L-H</a></option>
+   </select>
+<input type='submit' value='See results'>
+</form>
+</body>
+</html>

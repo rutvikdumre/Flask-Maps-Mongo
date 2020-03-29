@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+<title>Hotel</title>
+</head>
+<body bgcolor="white">
+<header style="background-image:url({{url_for('static', filename='city.jpg')}});background-size: cover; min-height: 100px; color:white; font-size: 40px">
+        <center>
+        <h1>Hotel</h1>
+        </center>
+</header>
+<div >
+       <form action="#" method="post">
+       	<center>
+       	<br>
+       	<p><label for="city"><b>City Name</b></label>
+<input type="text" placeholder="Enter City" name="city" required></p>
+<p><label for=range>Price range<input type="range" min='5000' max='13000' name='prange' list='marks'></label></p>
+<datalist id='marks'>
+  <option value="5500" label="0%"></option>
+  <option value="6000"></option>
+  <option value="6500"></option>
+  <option value="7000"></option>
+  <option value="7500" label='7500'></option>
+  <option value="8000"></option>
+  <option value="8500"></option>
+  <option value="9000"></option>
+  <option value="9500"></option>
+  <option value="10000"></option>
+  <option value="10500"></option>
+  <option value="11000"></option>
+  <option value="11500"></option>
+  <option value="12000"></option>
+  <option value="12500"></option>
+  <option value="13000" ></option>
+</datalist>
+<p><label for='sort'>Sort by</label>
+  <select name='sort'>
+    <option value='plh'>Price L-H</a></option>
+    <option value='phl'>Price H-L</a></option>
+    <option value='rhl'>Rating H-L</a></option>
+   </select>
+
+   <input type='submit' value='See results' name='sort'>
